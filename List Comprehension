@@ -1,0 +1,19 @@
+# Average Word Length
+
+# text input example = "this is some text"
+# output = 3.5
+
+text = input()
+
+num_strings = len(text)
+num_spaces = sum([int(len(space)) for space in text if space == " "])
+num_letters = num_strings - num_spaces
+num_words = len(text.split())
+
+ave_word_length = num_letters/num_words
+
+# print(num_strings)
+# print(num_spaces)
+# print(num_letters)
+# print(num_words)
+print(ave_word_length)
